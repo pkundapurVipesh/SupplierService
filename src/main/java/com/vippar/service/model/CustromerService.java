@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(name="customer" )
 public interface CustromerService {
     @RequestMapping("/customer/findById/{id}")
-    public  Customer findByID(@PathVariable Long id); 
+    public  Customer findByID(@PathVariable("id") Long id); 
     	
     
 
